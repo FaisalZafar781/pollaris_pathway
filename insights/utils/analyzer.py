@@ -1,10 +1,12 @@
-import os
 import json
 from openai import OpenAI
+from decouple import config
 
-# Initialize OpenAI client
 
-client = os.getenv("OPENAI_API_KEY")
+key = config('OPENAI_API_KEY')
+
+client = OpenAI(api_key=key)
+
 
 # Map each pillar to a core maturity axis (Strategic or Operational)
 pillar_to_axis = {
