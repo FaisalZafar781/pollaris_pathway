@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtualenv
+venv/
+.env/
+*.env
+
+# Django stuff:
+db.sqlite3
+*.sqlite3
+*.log
+
+# Migrations
+**/migrations/
+!**/migrations/__init__.py
+
+# Static & Media
+/staticfiles/
+/media/
+
+# Tailwind
+node_modules/
+theme/static_src/
+theme/static/css/
+theme/dist/
+tailwind.config.js
+postcss.config.js
+
+# VSCode
+.vscode/
+
+# MacOS
+.DS_Store
+
+# PyCharm
+.idea/
+
+# Coverage reports
+htmlcov/
+.coverage
+*.cover
+coverage.xml
+
+# Test
+test-output/
+
+# Misc
+*.bak
+*.swp
