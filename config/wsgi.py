@@ -35,7 +35,7 @@ def create_superuser():
     else:
         print("Superuser already exists")
 
-# create_superuser() 
+create_superuser() 
 apply_migrations()
 
 
