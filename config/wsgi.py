@@ -16,13 +16,13 @@ def apply_migrations():
     import django
     django.setup()
     from django.core.management import call_command
-
     try:
-        call_command('migrate')
-        print("Migrations applied")
+        print("🔄 Applying migrations...")
+        call_command('migrate', verbosity=2)  # Show detailed info
+        print("✅ Migrations applied.")
     except Exception as e:
-        print(f"Migration error: {e}")
-
+        print(f"❌ Migration error: {e}")
+        
 def create_superuser():
     import django
     django.setup()
