@@ -20,7 +20,7 @@ class InsightsConfig(AppConfig):
 
             # Load data only once — avoid duplicate loads
             if os.environ.get("RUN_DATA_LOAD_ONCE") != "1":
-                call_command('loaddata', 'fixtures/data.json')
+                call_command('loaddata', 'data.json')
                 os.environ["RUN_DATA_LOAD_ONCE"] = "1"
         except OperationalError:
             # Database might not be ready during migrations
