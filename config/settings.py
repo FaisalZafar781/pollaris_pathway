@@ -141,6 +141,7 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     'b9fd-103-125-179-146.ngrok-free.app',  # your current ngrok URL
     'pollaris-pathway.onrender.com'
+    'pollarispathway-production.up.railway.app'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
