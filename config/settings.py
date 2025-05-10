@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'insights.apps.InsightsConfig',
     'insights',
     'widget_tweaks',
     'rest_framework',
