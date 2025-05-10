@@ -13,15 +13,5 @@ class InsightsConfig(AppConfig):
         import os
 
         User = get_user_model()
-        try:
-            # Create superuser if it doesn't exist
-            if not User.objects.filter(username="admin").exists():
-                User.objects.create_superuser("admin", "admin@example.com", "admin123")
-
-            # Load data only once — avoid duplicate loads
-            if os.environ.get("RUN_DATA_LOAD_ONCE") != "1":
-                call_command('loaddata', 'data.json')
-                os.environ["RUN_DATA_LOAD_ONCE"] = "1"
-        except OperationalError:
-            # Database might not be ready during migrations
-            pass
+        if not User.objects.filter(username="admin").exists():
+            User.objects.create_superuser("admin", "admin@example.com", "admin123")
