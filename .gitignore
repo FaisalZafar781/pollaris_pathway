@@ -26,8 +26,8 @@ db.sqlite3
 # Tailwind
 node_modules/
 # theme/static_src/
-theme/static/css/
-theme/dist/
+# theme/static/css/
+# theme/dist/
 # tailwind.config.js
 # postcss.config.js
 
